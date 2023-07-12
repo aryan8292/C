@@ -1,31 +1,21 @@
-# Auto-Approve-Bot
-👾 Hey I'll Accept telegram join requests. Easy to use and simple.
-
-
-<h2>〽️ Deploy Me </h2> 
-  
-<details><summary>📌 Deploy to Heroku </summary>
-  
-<a href="https://heroku.com/deploy?templatehttps://github.com/sheffykhlg/Auto-Approve-Bot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"></p></a>
+<details><summary>Deploy To Heroku</summary>
+<p>
+<br>
+<a href="https://heroku.com/deploy?template=https://github.com/sheffykhlg/Moviescrowwn">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
+</a>
+</p>
 </details>
-
-  
-<details><summary>📌 Deploy to Okteto </summary>
-  
-[![Deploy on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/NobiDeveloper/Auto-Approve-Bot/)
+<details><summary>Deploy To Heroku Via Bot</summary>
+<p>
+<br>
+<a href="https://telegram.dog/XTZ_HerokuBot?start=Sm9lbGtiL0RRLXRoZS1maWxlLWRvbm9yIG1hc3Rlcg">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy Via Heroku Bot">
+</a>
+</p>
 </details>
+  
 
-<details><summary>📌 Deploy to VPS/Local </summary>
-
-
-  ```ssh
-  git clone https://github.com/NobiDeveloper/Auto-Approve-Bot
-  pip3 install -r requirements.txt
-  # fill config.py vars
-  python3 bot.py
-  ```
-
-</details>
 
 ## 🏷 Environment Variables
   - `API_ID` - Your Telegram API ID.
