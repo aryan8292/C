@@ -53,7 +53,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/b2d67c553fd77a1184cbc.jpg", caption="**{}\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n__By : @sheffy_samra__**".format(m.from_user.mention, "https://telegram.dog/sheffy_samra"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/b2d67c553fd77a1184cbc.jpg", caption="**{}\nI'm an auto approve [DEVIL 👿]({}) Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n__By : @sheffy_samra__**".format(m.from_user.mention, "https://telegram.dog/sheffy_samra"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
