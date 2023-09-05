@@ -9,7 +9,8 @@
         "Telegram ",
         "Pyrogram "
     ],
-    
+    "website": "https://small-sharp-tool.com/",
+  "repository": "https://github.com/jane-doe/small-sharp-tool",
     "env": {
     "API_ID": {
       "description": "Enter your API_ID, get it from my.telegram.org/apps",
