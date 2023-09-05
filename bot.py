@@ -44,22 +44,17 @@ async def op(_, m :Message):
         if m.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("📍 Channel", url="https://telegram.dog/moviescrown123"),
-                        InlineKeyboardButton("✌️ Support", url="https://telegram.dog/Moviescrown123")
-                    ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://telegram.me/Requestacceptcrownbot?startgroup")
-                    ]
+                    
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/b2d67c553fd77a1184cbc.jpg", caption="**{}\nI'm an auto approve [DEVIL 👿]({}) Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n__By : @sheffy_samra__**".format(m.from_user.mention, "https://telegram.dog/sheffy_samra"), reply_markup=keyboard)
+            await m.reply_photo("", caption="**{}\nI'm an auto approve  Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n **".format(m.from_user.mention, "https://t.me/ARY_botZ"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🙏 Start me private 🙏", url="https://telegram.me/Shizuka_filter_bot?start=start")
+                        InlineKeyboardButton("🙏 Start me private 🙏", url="https://t.me/ARY_botZ")
                     ]
                 ]
             )
@@ -71,7 +66,7 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👉 Update Channel 👈", url="https://telegram.dog/Moviescrown123")
+                    InlineKeyboardButton("👉 Update Channel 👈", url="https://t.me/ARY_botZ")
                 ],[
                     InlinekeyboardButton("✅ Check Again ✅","chk")
                 ]
@@ -88,12 +83,7 @@ async def chk(_, cb : CallbackQuery):
         if cb.message.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("📍 Channel", url="https://telegram.dog/Moviescrown123"),
-                        InlineKeyboardButton("✌️ Support", url="https://telegram.dog/Moviescrown123")
-                    ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://telegram.me/Requestacceptcrownbot?startgroup")
-                    ]
+                    
                 ]
             )
             add_user(cb.from_user.id)
