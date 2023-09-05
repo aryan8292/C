@@ -28,7 +28,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**{},\nWelcome To {}\n\n__By : @MovieVillaYT__**".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**{},\nWelcome To {}\n\n__By : https://t.me/ARY_botZ__**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -45,21 +45,21 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://telegram.dog/MovieVillaYT"),
-                        InlineKeyboardButton("💬 Support", url="https://telegram.dog/MovieVillaSupport")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/ARY_botZ"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/ARY_botZ")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://telegram.me/Shizuka_filter_bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/ARY_botZ")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/63d723680cca52ba46319.jpg", caption="**{}\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n__By : @MovieVillaYT__**".format(m.from_user.mention, "https://telegram.dog/MovieVillaYT"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/63d723680cca526319.jpg", caption="**{}\nI'm an auto approve  Bot.\nI can approve users in Groups/Channels.Add me to your Channel Or Group and promote me Admin with add members permission.\n\n__By : https://t.me/ARY_NETWORK  **".format(m.from_user.mention, "https://t.me/ARY_botZ"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://telegram.me/Shizuka_filter_bot?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/ARY_botZ")
                     ]
                 ]
             )
@@ -71,7 +71,7 @@ async def op(_, m :Message):
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👉 Update Channel 👈", url="https://telegram.dog/MovieVillaYT")
+                    InlineKeyboardButton("👉 Update Channel 👈", url="https://t.me/ARY_botZ")
                 ],[
                     InlinekeyboardButton("🍀 Check Again 🍀","chk")
                 ]
